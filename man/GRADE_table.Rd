@@ -13,7 +13,6 @@ GRADE_table(
   report.bias,
   effect.size = c("diff", "ratio"),
   clinical.effect.size,
-  inconsis,
   model = c("Bayes", "Freq")
 )
 }
@@ -34,9 +33,9 @@ GRADE_table(
 
 \item{clinical.effect.size}{clinical effect size}
 
-\item{inconsis}{inconsistence from mtc.nodesplit}
-
 \item{model}{Bayes-bayesian net-meta model, Freq-frequentist net-meta model}
+
+\item{inconsis}{inconsistence from mtc.nodesplit}
 }
 \value{
 GRADE table matrix

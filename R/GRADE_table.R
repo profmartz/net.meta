@@ -260,7 +260,7 @@ if(model=="Bayes"){
   }
 
   if(bmt$outcome=="RR"){
-    inconsist<-mtc.nodesplit(
+    inconsis<-mtc.nodesplit(
       bmt$mtc.net,
       likelihood = "binom",
       link = "log",
@@ -269,7 +269,7 @@ if(model=="Bayes"){
   }
 
   if(bmt$outcome=="HR"){
-    inconsist<-mtc.nodesplit(
+    inconsis<-mtc.nodesplit(
       bmt$mtc.net,
       likelihood = "poisson",
       link = "log",

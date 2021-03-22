@@ -77,6 +77,6 @@ RESULT.B1 <- GRADE_table(
   inconsis = inconsist1,
   model="Bayes")
 
-p<-GRADE_plot(RESULT.B1, font.size=4, lab.size=12)
+p<-GRADE_plot(RESULT.B1, font.size=4, lab.size=12, font.family="Helvetica")
 
 }

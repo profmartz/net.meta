@@ -217,7 +217,7 @@ if(model=="Bayes"){
 ## global test
 dd <- decomp.design(nmt, tau.preset = nmt$tau.preset, warn = TRUE)
 #inc.X <- dd$Q.decomp$pval[3]
-#inc.X <- dd[["Q.inc.random"]]$pval
+inc.X <- dd[["Q.inc.random"]]$pval
 
 ns <- netsplit(nmt, method = "SIDDE")
 inc.P <- data.frame(inc.p=ns$compare.random, row.names = ns$compare.random[,1])
@@ -303,7 +303,7 @@ if(model=="Bayes"){
   }
 }
 
-#inc.P[is.na(inc.P)] <- ifelse(inc.X<0.05, 3, ifelse(inc.X>0.1,1,2))
+inc.P[is.na(inc.P)] <- ifelse(inc.X<0.05, 3, ifelse(inc.X>0.1,1,2))
 incoherence.p <- inc.P$inc.p.p
 
 
